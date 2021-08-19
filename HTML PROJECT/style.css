@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Style+Script&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    font-family: 'Lobster',sans-serif;
+    scroll-behavior: smooth;
+}
+{
+text-decoration: none;}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: orange;
+    background-color: transparent;
+    border: 2px solid orange;
+    font-size: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+    text-decoration: none;
+}
+ .cta:hover{
+    color: white;
+    background-color: orange;  
+    
+}
+.brand h1 {
+    margin-top: 5px;
+	font-size: 2.6rem;
+	text-transform: uppercase;
+	color: orange;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+/* Header section */
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+    text-decoration: none;
+}
+#header .header {
+	min-height: 2vh;
+	background-color: rgba(19, 18, 18, 0.24);
+	transition: 0.3s ease background-color;
+    text-decoration: none;
+}
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 60%;
+	max-width: 1000px;
+	padding: 0 10px;
+    text-decoration: none;
+}
+/* End Header section */
+
+
+
+
+/*main section*/
+#main{
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#main::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#main .main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#main h1 {
+    display: block;
+    width: fit-content;
+    font-size: 2.5rem;
+    position: relative;
+    color: orange;
+    text-shadow: 2px 2px 5px black;
+}
+#main label {
+    display: inline-flex;
+    width: fit-content;
+    font-size: 1rem;
+    position: relative;
+    color: white;
+}
+
+#main ::placeholder{
+    display: block;
+    padding: 10px 35px;
+    color:black;
+    background-color: transparent;
+    border: 4px solid orange;
+    font-size: .5rem;
+    text-transform: uppercase;
+}
+/*end main section*/
+
+
+
+
+/*CUISINE*/
+#cuisines {
+	background-image: linear-gradient(60deg, #ffc982 0%, #ff7d04da 100%);
+}
+#cuisines .cuisines {
+	flex-direction: column;
+	text-align: center;
+	min-width: 500px;
+	margin: 0 ;
+	padding: 100px 0;}
+   
+    #cuisines .cuisine-top {
+        max-width: 500px;
+        margin: 0 auto;}
+       
+        #cuisines .cuisine-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;}
+            
+            #cuisines h2{
+                color: white;
+                display: flex;
+                text-shadow: 2px 2px 5px black;
+            }
+            #cuisines .cuisine-item {
+                width: 110%;
+                padding: 20px;
+                text-align: center;
+                border-radius: 10px;
+                padding: 30px;
+                margin: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: 0px 0px 18px 0 #0000002c;
+                transition: 0.3s ease box-shadow;
+                background-image: url(./images/indian.jpg);
+                background-size: cover;
+                margin: 10px 5%;
+            }
+            #cuisines .cuisine-item:hover {
+                box-shadow: 0px 0px 20px 0 #000000;
+            }
+            #cuisines .cuisine-item1 {
+                width: 110%;
+                padding: 20px;
+                text-align: center;
+                border-radius: 10px;
+                padding: 30px;
+                margin: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: 0px 0px 18px 0 #0000002c;
+                transition: 0.3s ease box-shadow;
+                background-image: url(./images/0000_HERO.jpg);
+                background-size: cover;
+                margin: 10px 5%;
+                
+            }
+            #cuisines .cuisine-item1:hover {
+                box-shadow: 0px 0px 20px 0 #000000;
+            }
+            #cuisines .cuisine-item2 {
+                width: 110%;
+                padding: 20px;
+                text-align: center;
+                border-radius: 10px;
+                padding: 30px;
+                margin: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: 0px 0px 18px 0 #0000002c;
+                transition: 0.3s ease box-shadow;
+                background-image: url(./images/lu.jpg);
+                background-size: cover;
+                margin: 10px 5%;
+            }
+            #cuisines .cuisine-item2:hover {
+                box-shadow: 0px 0px 20px 0 #000000;
+            }                
+/*END CUISINE*/
+
+
+
+/*headline*/
+#headline h1 {
+    padding-left: 520px;
+    display: block;
+    width: fit-content;
+    font-size: 2.5rem;
+    position: relative;
+    color: orange;
+    text-shadow: 2px 2px 5px black;
+
+}
+#headline .headline{
+max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+    
+}
+#headline p{
+    padding-left: 275px;}
+    /* end headline*/
+
+
+
+/*reach*/
+#reach .reach {
+	flex-direction: column-reverse;
+	text-align: center;
+	min-width: 800px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+#reach .col-left {
+	width: 480px;
+	height: 10px;
+}
+#reach .col-right {
+	width: 500px;
+}
+#reach .col-right h1 {
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: 0rem;
+	margin-bottom: 10px;
+}
+#reach .col-right p {
+	margin-bottom: 20px;
+}
+#reach .col-right .cta {
+	color: rgb(0, 0, 0);
+    letter-spacing: 0rem;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 1rem;
+}
+/*end reach*/
+
+
+
+/* contact Section */
+#contact {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#contact h {
+    padding-left: 75px;
+    display: block;
+    width: fit-content;
+    font-size: 2.5rem;
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+
+}
+#contact .contact {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+#contact .contact-items {  
+	width: 400px;
+}
+#contact .contact-item {
+	width: 100%;
+	
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #ffffff00;
+	transition: 0.3s ease box-shadow;
+}
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #ffffff;
+}
+#contact .icon {
+	width: 70px;
+   margin: 0 auto;
+	margin-bottom: 5px;
+}
+#contact .contact-info h1 {
+	font-size: 2.5rem;
+	font-weight: 100;
+	margin-bottom: 5px;
+}
+#contact .contact-info h2 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+}
+/*End contact Section */
+
+
+
+
+/*social*/
+#social {
+	background-image: linear-gradient(60deg, #0077ff 0%, #0277f3 100%);
+}
+#social .social {
+	min-height: 150px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+#social h2 {
+	color: orange;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    text-shadow: 2px 2px 5px black;
+}
+#social .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+#social .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 40px;
+}
+#social .social-item img {
+	filter: grayscale(1);
+	transition: 0.3s ease filter;
+}
+#social .social-item:hover img {
+	filter: grayscale(0);
+}
+#social p {
+    margin-top: 30px;
+	color: orange;
+	font-size: 1.3rem;
+    text-shadow: 2px 2px 5px black;
+}
+/* End social */
+
+
+
+
